@@ -1,6 +1,6 @@
-# 🌐 Shaurya Singh — Portfolio
+# 🌐 Aruni Sharma — Portfolio
 
-Hey there! I'm Shaurya — a web developer who loves building cool stuff and learning along the way.  
+Hey there! I'm Aruni — a full stack developer and Computer Science undergraduate who loves building clean, scalable web products.  
 This is my personal portfolio — my digital corner to show who I am and what I do. 🚀
 
 ---
@@ -8,7 +8,7 @@ This is my personal portfolio — my digital corner to show who I am and what I 
 ## 📸 Preview
 
 [🔗 Live Site](https://your-live-link.com)  
-*(Best viewed with snacks and a cup of chai ☕)*
+*(Replace with your Netlify or GitHub Pages URL)*
 
 ---
 
@@ -28,14 +28,13 @@ This is my personal portfolio — my digital corner to show who I am and what I 
 - HTML5  
 - CSS3  
 - JavaScript (Vanilla)  
-- [Add any library if used — e.g., EmailJS, GSAP, etc.]
+- Font Awesome
 
 ---
 
 ## 🧠 Why I Built This?
 
-Because... why not?  
-I wanted a place to call *digitally mine*, show my work, track my growth, and maybe impress a recruiter or two 😏
+I wanted a place to call *digitally mine*, show my work, track my growth, and share my journey as a developer.
 
 ---
 
@@ -43,8 +42,10 @@ I wanted a place to call *digitally mine*, show my work, track my growth, and ma
 
 If you liked what you saw, or just want to say *hi*, feel free to reach out:
 
-- 📧 Email: [imparas07singh@gmail.com]  
-- 💼 LinkedIn: [[shaurya-singh007](https://www.linkedin.com/in/shaurya-singh007/)]
+- 📧 Email: arunisharma2006@gmail.com
+- 💼 LinkedIn: https://www.linkedin.com/in/aruni-sharma/
+- 💻 GitHub: https://github.com/swagger2006
+- 📷 Instagram: https://www.instagram.com/arunisharma69/
 
 ---
 
