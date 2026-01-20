@@ -1,0 +1,362 @@
+/* ========================================
+   GLOBAL UI CONSISTENCY - TRUUS.CO STYLE
+   ======================================== */
+
+/* Override existing section headers with minimal style */
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    margin-bottom: 20px !important;
+    letter-spacing: -1px !important;
+    line-height: 1.1 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.section-subtitle {
+    font-size: 1.1rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 400 !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.section-divider {
+    display: none !important;
+}
+
+/* Clean section backgrounds - remove complex effects */
+.bg-section {
+    background: transparent !important;
+}
+
+.section-bg,
+.projects-bg,
+.experience-bg,
+.education-bg {
+    display: none !important;
+}
+
+/* Hero Section - Clean Minimal */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero-content .tagline {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.hero-content .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Clean Button Styles */
+.btn-primary,
+.cta-button {
+    padding: 16px 32px !important;
+    background: #fff !important;
+    color: #000 !important;
+    border: none !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+}
+
+.btn-primary:hover,
+.cta-button:hover {
+    background: #8a2be2 !important;
+    color: #fff !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn-secondary {
+    padding: 16px 32px !important;
+    background: transparent !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+}
+
+.btn-secondary:hover {
+    background: #fff !important;
+    color: #000 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Skills Section - Clean Cards */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px 30px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
+}
+
+.skill-category:hover {
+    transform: translateY(-8px);
+    border-color: rgba(138, 43, 226, 0.3);
+    box-shadow: 0 20px 60px rgba(138, 43, 226, 0.2);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skill-category h3 i {
+    color: #8a2be2;
+    font-size: 1.3rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+.skill-category li:hover {
+    color: #fff;
+}
+
+/* Experience Cards - Match Project Style */
+.experience-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.experience-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(138, 43, 226, 0.3);
+    box-shadow: 0 20px 60px rgba(138, 43, 226, 0.2);
+}
+
+/* Education Section - Clean Style */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(138, 43, 226, 0.3);
+    box-shadow: 0 20px 60px rgba(138, 43, 226, 0.2);
+}
+
+/* Contact Section - Minimal Form */
+.contact-form {
+    max-width: 800px;
+    margin: 60px auto 0;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8a2be2;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Contact content layout */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        margin-top: 40px;
+    }
+}
+
+/* Remove old animations and effects */
+.floating-elements,
+.interactive-particles,
+.education-particles,
+.timeline-line,
+.shape,
+.grid-lines,
+.floating-circles,
+.hexagon-grid,
+.circuit-path,
+.data-stream,
+.glitch-overlay {
+    display: none !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+
+    .experience-grid-modern,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem !important;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}

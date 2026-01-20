@@ -1,0 +1,42 @@
+/* ========================================
+   SKILLS SECTION CENTER FIX
+   ======================================== */
+
+.skills-category {
+    text-align: center !important;
+}
+
+.skills-category h3 {
+    justify-content: center !important;
+}
+
+.skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+}
+
+.skill-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.skill-info {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.skill-info i {
+    margin: 0 !important;
+}
+
+.skill-bar {
+    width: 100% !important;
+    max-width: 200px !important;
+    margin: 0 auto !important;
+}

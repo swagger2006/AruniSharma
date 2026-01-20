@@ -1,0 +1,83 @@
+/* ========================================
+   SUBTLE MOTION BACKGROUND - CLEAN & PROFESSIONAL
+   ======================================== */
+
+#skills {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle Moving Gradient Mesh */
+#skills::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(0, 191, 255, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(255, 51, 102, 0.05) 0%, transparent 50%);
+    animation: gradientShift 25s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(5%, -5%) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(-5%, 5%) rotate(240deg);
+    }
+}
+
+/* Floating Particles */
+#skills::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, rgba(138, 43, 226, 0.4) 1px, transparent 1px),
+        radial-gradient(circle, rgba(138, 43, 226, 0.3) 1px, transparent 1px);
+    background-size: 50px 50px, 80px 80px;
+    background-position: 0 0, 40px 40px;
+    animation: particleFloat 30s linear infinite;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+/* Ensure content is above background */
+#skills .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #skills::after {
+        background-size: 40px 40px, 60px 60px;
+    }
+}

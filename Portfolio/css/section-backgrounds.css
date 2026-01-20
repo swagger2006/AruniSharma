@@ -1,0 +1,286 @@
+/* ========================================
+   SECTION BACKGROUNDS - INTERACTIVE & COOL
+   ======================================== */
+
+/* Projects Section - Animated Grid Pattern */
+#projects {
+    position: relative;
+    overflow: hidden;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(0deg,
+            transparent,
+            transparent 80px,
+            rgba(138, 43, 226, 0.12) 80px,
+            rgba(138, 43, 226, 0.12) 82px),
+        repeating-linear-gradient(90deg,
+            transparent,
+            transparent 80px,
+            rgba(255, 51, 102, 0.1) 80px,
+            rgba(255, 51, 102, 0.1) 82px);
+    animation: waveMove 25s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes waveMove {
+
+    0%,
+    100% {
+        transform: translateY(0) skewY(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) skewY(2deg);
+    }
+}
+
+#projects::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: orbFloat 18s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes orbFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(150px, -80px) scale(1.2);
+    }
+
+    50% {
+        transform: translate(80px, 100px) scale(0.9);
+    }
+
+    75% {
+        transform: translate(-100px, 50px) scale(1.1);
+    }
+}
+
+/* Skills Section - Floating Dots Pattern */
+#skills {
+    position: relative;
+    overflow: hidden;
+}
+
+#skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(138, 43, 226, 0.15) 2px, transparent 2px);
+    background-size: 40px 40px;
+    animation: dotsFloat 25s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes dotsFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+#skills::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 191, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: pulseGlow 8s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+/* Experience Section - Diagonal Lines */
+#experience {
+    position: relative;
+    overflow: hidden;
+}
+
+#experience::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 50px,
+            rgba(138, 43, 226, 0.03) 50px,
+            rgba(138, 43, 226, 0.03) 51px);
+    animation: diagonalMove 30s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes diagonalMove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(71px, 71px);
+    }
+}
+
+#experience::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 51, 102, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: floatBlob 15s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes floatBlob {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(100px, -100px) scale(1.1);
+    }
+}
+
+/* Achievements Section - Hexagon Pattern */
+#achievements {
+    position: relative;
+    overflow: hidden;
+}
+
+#achievements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(60deg, transparent, transparent 50px, rgba(138, 43, 226, 0.04) 50px, rgba(138, 43, 226, 0.04) 51px),
+        repeating-linear-gradient(120deg, transparent, transparent 50px, rgba(138, 43, 226, 0.04) 50px, rgba(138, 43, 226, 0.04) 51px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(138, 43, 226, 0.04) 50px, rgba(138, 43, 226, 0.04) 51px);
+    animation: hexagonShift 40s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes hexagonShift {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(86.6px);
+    }
+}
+
+#achievements::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    filter: blur(100px);
+    animation: achievementGlow 12s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes achievementGlow {
+
+    0%,
+    100% {
+        transform: translate(0, -50%) scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translate(-100px, -50%) scale(1.15);
+        opacity: 0.7;
+    }
+}
+
+/* Ensure content is above backgrounds */
+#projects .container,
+#skills .container,
+#experience .container,
+#achievements .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    #featured-projects::before,
+    #skills::before,
+    #experience::before,
+    #achievements::before {
+        background-size: 40px 40px;
+    }
+
+    #skills::after,
+    #experience::after,
+    #achievements::after {
+        width: 300px;
+        height: 300px;
+    }
+}

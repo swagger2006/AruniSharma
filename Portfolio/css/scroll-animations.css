@@ -1,0 +1,136 @@
+/* ========================================
+   UNIVERSAL SCROLL ANIMATIONS
+   ======================================== */
+
+/* Base animation state */
+.fade-in-up,
+.featured-project,
+.about-content,
+.skill-item,
+.education-item,
+.contact-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Visible state */
+.fade-in-up.visible,
+.featured-project.visible,
+.about-content.visible,
+.skill-item.visible,
+.education-item.visible,
+.contact-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for multiple items */
+.fade-in-up:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.fade-in-up:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.fade-in-up:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.fade-in-up:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.fade-in-up:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.fade-in-up:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+/* Section headers animation */
+.section-header,
+.section-header-minimal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-header.visible,
+.section-header-minimal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   SMOOTH MODAL POPUP EFFECT
+   ======================================== */
+
+.project-modal-clean {
+    display: none;
+    opacity: 0;
+}
+
+.project-modal-clean.active {
+    display: flex;
+    animation: modalFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project-modal-clean.active .modal-container-clean {
+    animation: modalSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalSlideUp {
+    from {
+        transform: translateY(50px) scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Modal close animation */
+.project-modal-clean.closing {
+    animation: modalFadeOut 0.3s ease-out forwards;
+}
+
+.project-modal-clean.closing .modal-container-clean {
+    animation: modalSlideDown 0.3s ease-out forwards;
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes modalSlideDown {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(30px) scale(0.98);
+        opacity: 0;
+    }
+}
