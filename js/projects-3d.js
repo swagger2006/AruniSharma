@@ -9,69 +9,69 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Project Details Data
     const projectDetails = {
-        roomwati: {
-            title: 'RoomWati',
+        ShareBite: {
+            title: 'ShareBite',
             category: 'Full Stack Web Application',
-            description: 'A comprehensive room booking platform built with the MERN stack. Features real-time availability checking, secure user authentication with JWT, and a powerful admin dashboard for managing bookings and rooms efficiently.',
-            features: [
-                'Real-time room availability checking',
-                'Secure JWT-based authentication system',
-                'Comprehensive admin dashboard',
-                'Responsive design for all devices',
-                'Email notifications for bookings',
-                'Payment integration ready architecture'
-            ],
+            description: 'A comprehensive surplus food distribution platform built with a full-stack architecture. It enables real-time food availability tracking, secure JWT-based authentication, and an efficient admin dashboard to manage donations, pickups, and users seamlessly.',
+features: [
+    'Real-time surplus food availability tracking',
+    'Secure JWT-based authentication system',
+    'Role-based access for donors, NGOs, and volunteers',
+    'Comprehensive admin dashboard for food and user management',
+    'Location-based pickup and distribution coordination',
+    'Responsive design for all devices'
+],
             technologies: ['Node.js', 'Express.js', 'MongoDB', 'EJS', 'JWT', 'Bcrypt'],
-            liveUrl: 'https://roomwati.onrender.com',
-            githubUrl: 'https://github.com/shourya9058/RoomWati'
+            liveUrl: 'https://github.com/swagger2006/ShareBite',
+            githubUrl: 'https://github.com/swagger2006/ShareBite'
         },
         feelit: {
-            title: 'Feelit Music Player',
-            category: 'Frontend Web Application',
-            description: 'A modern, minimal web music player featuring a beautiful user interface with light/dark theme toggle. Built entirely with vanilla HTML, CSS, and JavaScript, demonstrating clean code architecture and smooth user experience.',
+            title: 'CafeConnect ',
+            category: 'Full Stack Web Application',
+            description: 'Designed and developed a web-based cafeteria food ordering system to digitize menu browsing and order placement, reducing manual effort and queue time.',
             features: [
                 'Clean and intuitive user interface',
-                'Seamless light/dark theme toggle',
-                'Advanced playlist management',
-                'Smooth animations and transitions',
+                'Real-time order status tracking',
+                'Online food ordering via mobile or desktop',
+                'Admin dashboard for menu and order management',
                 'Fully responsive design',
                 'Local storage for user preferences'
             ],
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'Font Awesome', 'Local Storage API'],
-            liveUrl: 'https://feelit-music-player.onrender.com',
-            githubUrl: 'https://github.com/shourya9058/Feelit'
+            liveUrl: 'https://github.com/swagger2006',
+            githubUrl: 'https://github.com/swagger2006'
         },
         twogood: {
-            title: 'Two Good Co Clone',
-            category: 'UI/UX Clone Project',
-            description: 'A pixel-perfect recreation of the Two Good Co website, showcasing advanced frontend development skills. Features smooth scroll animations powered by GSAP and a fully responsive design that works flawlessly across all devices.',
+            title: 'Hospital Management System',
+            category: 'Full Stack Project',
+            description: 'Designed and developed a web-based Hospital Management System to digitize patient records, appointments, and hospital operations., showcasing advanced frontend development skills. Features smooth scroll animations powered by GSAP and a fully responsive design that works flawlessly across all devices.',
             features: [
-                'Pixel-perfect design replication',
-                'Smooth scroll animations with GSAP',
+                'Implemented secure role-based authentication for admins, doctors, and staff to ensure data privacy and controlled access.',
+                'Built modules for patient registration, appointment scheduling, and doctor assignment to streamline hospital workflows.',
                 'Fully responsive layout system',
                 'Optimized performance metrics',
                 'Cross-browser compatibility',
                 'Modern CSS Grid and Flexbox techniques'
             ],
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Flexbox', 'CSS Grid'],
-            liveUrl: 'https://shourya9058.github.io/Two-Good-Co-Clone/',
-            githubUrl: '#'
+            liveUrl: 'https://github.com/swagger2006',
+            githubUrl: 'https://github.com/swagger2006'
         },
         astralock: {
-            title: 'AstraLock Extension',
-            category: 'Browser Extension',
-            description: 'A Chrome extension designed to enhance browser security with password protection and session management features. Provides users with peace of mind through automatic session locking and customizable privacy settings.',
+            title: 'RefineryIQ',
+            category: 'AI-Driven Energy & Safety Intelligence Platform',
+            description: 'Designed and developed Refinery IQ, an AI-driven intelligence platform to monitor, analyze, and optimize energy consumption and safety metrics in refinery operations.',
             features: [
-                'Password protection for browser sessions',
-                'Automatic session locking mechanism',
-                'Privacy mode for incognito browsing',
-                'Customizable security settings',
-                'Clean, user-friendly interface',
-                'Lightweight and performant'
+                'Real-time refinery energy and production monitoring',
+                'AI-driven analytics for efficiency and loss detection',
+                'Automated KPI calculation and performance insights',
+                'Anomaly detection for safety and operational risks',
+                'Interactive dashboards with clear visualizations',
+                'Scalable and high-performance data processing'
             ],
-            technologies: ['JavaScript', 'Chrome Extension API', 'HTML5', 'CSS3', 'Local Storage'],
-            liveUrl: '#',
-            githubUrl: '#'
+            technologies: ['Python', 'NumPy', 'Pandas', 'Chrome Extension API', 'ML', 'React', 'Local Storage', 'JWT'],
+            liveUrl: 'https://github.com/swagger2006',
+            githubUrl: 'https://github.com/swagger2006'
         }
     };
     
